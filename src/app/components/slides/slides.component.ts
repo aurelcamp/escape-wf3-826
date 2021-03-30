@@ -25,14 +25,16 @@ export class SlidesComponent implements OnInit {
     title: 'Escape 2',
   }
 
+  imageSelected: ImageSlide = this.image1;
+
   constructor() { }
 
   ngOnInit() {
     setTimeout(
       () => {
-        this.image1.url = this.image2.url;
-        this.image1.alt = this.image2.alt;
-        this.image1.title = this.image2.title;
+        // this.image1.url = this.image2.url;
+        // this.image1.alt = this.image2.alt;
+        // this.image1.title = this.image2.title;
       },
       3000
     )
