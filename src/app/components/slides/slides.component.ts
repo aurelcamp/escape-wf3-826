@@ -35,6 +35,8 @@ export class SlidesComponent implements OnInit {
         // this.image1.url = this.image2.url;
         // this.image1.alt = this.image2.alt;
         // this.image1.title = this.image2.title;
+
+        this.imageSelected = this.image2;
       },
       3000
     )
