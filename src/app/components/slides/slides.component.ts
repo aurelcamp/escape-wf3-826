@@ -27,6 +27,10 @@ export class SlidesComponent implements OnInit {
 
   imageSelected: ImageSlide = this.image1;
 
+
+  isDisabled = false;
+  isVisible = false;
+
   constructor() { }
 
   ngOnInit() {
