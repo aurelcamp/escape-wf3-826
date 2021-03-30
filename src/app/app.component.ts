@@ -10,4 +10,9 @@ export class AppComponent {
   nbClassicRooms = 4;
   nbVirtualRooms = 5;
 
+  lastLi() {
+    console.log('lastLi');
+    return 'Amusement garanti';
+  }
+
 }
