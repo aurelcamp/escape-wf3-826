@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+interface ImageSlide {
+  url: string;
+  alt: string;
+  title: string;
+}
+
 @Component({
   selector: 'app-slides',
   templateUrl: './slides.component.html',
@@ -7,14 +13,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesComponent implements OnInit {
 
-  liens: string = './assets/images/escape1.jpg';
+  image1: ImageSlide = {
+    url: './assets/images/escape1.jpg',
+    alt: 'image escape 1',
+    title: 'Escape 1'
+  }
+
+  image2: ImageSlide = {
+    url: './assets/images/escape2.jpg',
+    alt: 'image escape 2',
+    title: 'Escape 2',
+  }
 
   constructor() { }
 
   ngOnInit() {
     setTimeout(
       () => {
-        this.liens = './assets/images/escape2.jpg';
+        this.image1.url = this.image2.url;
+        this.image1.alt = this.image2.alt;
+        this.image1.title = this.image2.title;
       },
       3000
     )
