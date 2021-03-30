@@ -13,12 +13,17 @@ export class AppComponent implements OnInit {
   ageMax = 120;
 
   ngOnInit() {
-    console.log('oninit');
+    setTimeout(
+      () => {
+        this.title = 'Saurez vous sortir vivant ?'
+      },
+      5000
+    )
   }
 
   lastLi() {
-    console.log('lastLi');
     return 'Amusement garanti';
   }
+
 
 }
