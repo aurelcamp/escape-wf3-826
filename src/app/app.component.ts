@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'escape';
+  title = 'Bienvenue visiteur';
+  nbClassicRooms = 4;
+  nbVirtualRooms = 5;
+
 }
