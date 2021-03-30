@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesComponent implements OnInit {
 
+  liens: string = './assets/images/escape1.jpg';
+
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    setTimeout(
+      () => {
+        this.liens = './assets/images/escape2.jpg';
+      },
+      3000
+    )
   }
 
 }
