@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-choice-nb',
@@ -11,13 +11,16 @@ export class ChoiceNbComponent implements OnInit {
   @Input() min: number = 1;
   @Input() max: number;
 
+  @Output() nbModify = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
   // substract() {
-  //   this.nbPersons--;
+  //   this.nb--;
+  //   this.nbModify.emit(this.nb);
   // }
 
 }
