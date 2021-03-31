@@ -9,7 +9,8 @@
     <!-- <button id="moins" (click)="nbPersons = nbPersons - 1" [disabled]="nbPersons == 1">-</button>
     {{ nbPersons }}
     <button id ="plus" (click)="nbPersons = nbPersons + 1" [disabled]="nbPersons == 8">+</button> -->
-    <app-choice-nb [nb]="nbPersons"></app-choice-nb>
+
+    <app-choice-nb [nb]="nbPersons" [max]="8"></app-choice-nb>
   </div>
   
 </div>
