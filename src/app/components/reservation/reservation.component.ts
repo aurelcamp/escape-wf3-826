@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReservationComponent implements OnInit {
 
   name = 'Joe';
-  roomNumber = 1;
+  roomNumber = 2;
 
   nbPersons = 2;
   initialPrice = 160
@@ -32,7 +32,7 @@ export class ReservationComponent implements OnInit {
   }
 
   validate() {
-    console.log('validate');
+    console.log(this.roomNumber);
   }
 
 }
