@@ -50,4 +50,12 @@ export class SlidesComponent implements OnInit {
     alert('plus');
   }
 
+  keyUpEvent(event: any) {
+    console.log(event.target.value);
+  }
+
+  keyUpValue(val: string) {
+    
+  }
+
 }

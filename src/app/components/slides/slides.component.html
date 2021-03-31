@@ -1,4 +1,7 @@
 <img class="image-slide" [src]="imageSelected.url" [alt]="imageSelected.alt" [title]="imageSelected.title">
 
-<button [disabled]="isDisabled" (click)="seeMore()">Voir plus</button>
+<button [disabled]="isDisabled" (dblclick)="seeMore()">Voir plus</button>
 <button [hidden]="!isVisible">Bouton 2</button>
+
+
+<input type="text" #input1 (keyup)="keyUpValue(input1.value)">
