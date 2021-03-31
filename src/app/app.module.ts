@@ -10,7 +10,7 @@ import { TestComponent } from './components/test/test.component';
   declarations: [
     AppComponent,
     SlidesComponent,
-    TestComponent
+    TestComponent,
   ],
   imports: [
     BrowserModule,

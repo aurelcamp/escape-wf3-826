@@ -46,4 +46,8 @@ export class SlidesComponent implements OnInit {
     )
   }
 
+  seeMore() {
+    alert('plus');
+  }
+
 }
