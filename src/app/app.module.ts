@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { SlidesComponent } from './components/slides/slides.component';
 import { TestComponent } from './components/test/test.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
+import { ChoiceNbComponent } from './components/choice-nb/choice-nb.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { ReservationComponent } from './components/reservation/reservation.compo
     SlidesComponent,
     TestComponent,
     ReservationComponent,
+    ChoiceNbComponent,
   ],
   imports: [
     BrowserModule,
