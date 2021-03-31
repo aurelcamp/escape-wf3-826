@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReservationComponent implements OnInit {
 
   name = 'Joe';
+  roomNumber = 1;
 
   nbPersons = 2;
   initialPrice = 160
@@ -28,7 +29,10 @@ export class ReservationComponent implements OnInit {
     } else {
       this.totalPrice = this.initialPrice;
     }
+  }
 
+  validate() {
+    console.log('validate');
   }
 
 }

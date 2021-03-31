@@ -3,10 +3,6 @@
     <!-- <input type="text" [value]="name" #nameInput (input)="name = nameInput.value"> -->
     <input type="text" [(ngModel)]="name">
   </p>
-
-  <p>
-    {{ name }}
-  </p>
   
   <div>
     Nombre de personnes :
@@ -17,6 +13,13 @@
   
 </div>
 <p>
+  <select [(ngModel)]="roomNumber">
+    <option value="1">La salle 1</option>
+    <option value="2">La salle 2</option>
+    <option value="3">La salle 3</option>
+  </select>
+</p>
+<p>
   Code réduction : <input type="text" #reducInput (input)="checkReduc(reducInput.value)">
 </p>
 <p>
@@ -25,5 +28,5 @@
 <p>
   Prix par personne : {{ calculatePrice() }} €
 </p>
-<button>Réserver</button>
+<button (click)="validate()">Réserver</button>
 
