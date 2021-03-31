@@ -10,9 +10,15 @@ export class ReservationComponent implements OnInit {
   nbPersons = 2;
   totalPrice = 160;
 
+  Math = Math;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  calculatePrice() {
+    return Math.floor(this.totalPrice / this.nbPersons);
   }
 
 }
