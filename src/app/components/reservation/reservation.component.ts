@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
+  nbPersons = 4;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  substract() {
+    this.nbPersons--;
   }
 
 }
