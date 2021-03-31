@@ -1,5 +1,14 @@
 <div>
-  <p>Votre Nom :<input type="text"></p>
+  <p>Votre Nom :
+    <!-- <input type="text" [value]="name" #nameInput (input)="name = nameInput.value"> -->
+    <input type="text" [(ngModel)]="name">
+  </p>
+
+
+  <p>
+    {{ name }}
+  </p>
+  
   <div>
     Nombre de personnes :
     <button id="moins" (click)="nbPersons = nbPersons - 1" [disabled]="nbPersons == 1">-</button>

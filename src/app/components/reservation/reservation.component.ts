@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReservationComponent implements OnInit {
 
+  name = 'Joe';
+
   nbPersons = 2;
   initialPrice = 160
   totalPrice = this.initialPrice;
@@ -26,6 +28,7 @@ export class ReservationComponent implements OnInit {
     } else {
       this.totalPrice = this.initialPrice;
     }
+
   }
 
 }
