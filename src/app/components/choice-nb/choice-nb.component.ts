@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-choice-nb',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChoiceNbComponent implements OnInit {
 
+  @Input() nb: number;
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  // substract() {
+  //   this.nbPersons--;
+  // }
 
 }

@@ -6,9 +6,10 @@
   
   <div>
     Nombre de personnes :
-    <button id="moins" (click)="nbPersons = nbPersons - 1" [disabled]="nbPersons == 1">-</button>
+    <!-- <button id="moins" (click)="nbPersons = nbPersons - 1" [disabled]="nbPersons == 1">-</button>
     {{ nbPersons }}
-    <button id ="plus" (click)="nbPersons = nbPersons + 1" [disabled]="nbPersons == 8">+</button>
+    <button id ="plus" (click)="nbPersons = nbPersons + 1" [disabled]="nbPersons == 8">+</button> -->
+    <app-choice-nb [nb]="nbPersons"></app-choice-nb>
   </div>
   
 </div>
@@ -30,4 +31,5 @@
   Prix par personne : {{ calculatePrice() }} €
 </p>
 <button (click)="validate()">Réserver</button>
+
 

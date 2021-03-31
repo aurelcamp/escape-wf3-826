@@ -10,7 +10,7 @@ export class ReservationComponent implements OnInit {
   name = 'Joe';
   roomNumber = 2;
 
-  nbPersons = 2;
+  nbPersons = 3;
   initialPrice = 160
   totalPrice = this.initialPrice;
 
