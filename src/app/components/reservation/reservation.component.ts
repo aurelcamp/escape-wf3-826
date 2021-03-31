@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class ReservationComponent implements OnInit {
 
   nbPersons = 2;
-  totalPrice = 160;
+  initialPrice = 160
+  totalPrice = this.initialPrice;
 
   constructor() { }
 
@@ -22,7 +23,10 @@ export class ReservationComponent implements OnInit {
   checkReduc(str: string) {
     if (str === 'REDUC') {
       this.totalPrice = this.totalPrice * 0.7;
+    } else {
+      this.totalPrice = this.initialPrice;
     }
+
   }
 
 }
