@@ -22,11 +22,10 @@ export class ReservationComponent implements OnInit {
 
   checkReduc(str: string) {
     if (str === 'REDUC') {
-      this.totalPrice = this.totalPrice * 0.7;
+      this.totalPrice = this.initialPrice * 0.7;
     } else {
       this.totalPrice = this.initialPrice;
     }
-
   }
 
 }
