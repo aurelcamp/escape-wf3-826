@@ -9,6 +9,9 @@
   
 </div>
 <p>
+  Code réduction : <input type="text" #reducInput (input)="checkReduc(reducInput.value)">
+</p>
+<p>
   Prix total : {{ totalPrice }} €
 </p>
 <p>

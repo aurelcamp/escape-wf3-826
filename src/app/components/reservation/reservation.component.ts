@@ -19,4 +19,10 @@ export class ReservationComponent implements OnInit {
     return Math.floor(this.totalPrice / this.nbPersons);
   }
 
+  checkReduc(str: string) {
+    if (str === 'REDUC') {
+      this.totalPrice = this.totalPrice * 0.7;
+    }
+  }
+
 }
