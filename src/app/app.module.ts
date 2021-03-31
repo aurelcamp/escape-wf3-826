@@ -8,6 +8,7 @@ import { SlidesComponent } from './components/slides/slides.component';
 import { TestComponent } from './components/test/test.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { ChoiceNbComponent } from './components/choice-nb/choice-nb.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ChoiceNbComponent } from './components/choice-nb/choice-nb.component';
     TestComponent,
     ReservationComponent,
     ChoiceNbComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
