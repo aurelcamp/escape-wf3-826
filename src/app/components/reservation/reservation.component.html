@@ -2,9 +2,9 @@
   <p>Votre Nom :<input type="text"></p>
   <div>
     Nombre de personnes :
-    <button id="moins" (click)="substract()">-</button>
+    <button id="moins" (click)="nbPersons = nbPersons - 1" [disabled]="nbPersons == 0">-</button>
     {{ nbPersons }}
-    <button id ="plus" (click)="nbPersons = nbPersons + 1">+</button>
+    <button id ="plus" (click)="nbPersons = nbPersons + 1" [disabled]="nbPersons == 8">+</button>
   </div>
   
 </div>

@@ -14,8 +14,4 @@ export class ReservationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  substract() {
-    this.nbPersons--;
-  }
-
 }
