@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 class Room {
   title: string;
-  description: string;
+  description?: string;
   imageUrl: string;
   imageAlt: string;
   nbMin: number;
