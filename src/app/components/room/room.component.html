@@ -2,7 +2,9 @@
   <img [src]="room.imageUrl" class="card-img-top" [alt]="room.imageAlt">
   <div class="card-body">
     <h5 class="card-title">{{ room.title }}</h5>
-    <h6>Difficulté : {{ room.difficulty }}</h6>
+    <h6>Difficulté : 
+      <span [ngClass]="{'text-success': room.difficulty === 1, 'text-warning': room.difficulty === 2, 'text-danger': room.difficulty === 3}">{{ room.difficulty }}</span>
+    </h6>
     <div class="players">
       <span>
         De {{ room.nbMin }} à {{ room.nbMax }}
@@ -20,3 +22,7 @@
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
 </div>
+
+<!-- .text-success -> vert
+.text-warning -> orange
+.text-danger -> rouge -->

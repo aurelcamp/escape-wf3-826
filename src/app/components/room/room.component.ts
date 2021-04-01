@@ -28,7 +28,7 @@ export class RoomComponent implements OnInit {
     imageAlt: 'Escape room pirate',
     nbMin: 3,
     nbMax: 4,
-    difficulty: 1,
+    difficulty: 3,
     isVirtual: false,
   }
 
