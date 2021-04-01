@@ -4,13 +4,13 @@
     <h5 class="card-title">{{ room.title }}</h5>
     <h6>Difficulté : {{ room.difficulty }}</h6>
     <div class="players">
-      <span *ngIf="room.description">
+      <span>
         De {{ room.nbMin }} à {{ room.nbMax }}
         <br>
         joueurs
       </span>
     </div>
-    <button class="btn btn-primary" (click)="toggleDescription()">Voir / supprimer la description</button>
+    <button class="btn btn-primary" (click)="toggleDescription()" *ngIf="room.description != undefined">Voir / supprimer la description</button>
     <p class="card-text" *ngIf="descriptionIsVisible">
       {{ room.description }}
     </p>
