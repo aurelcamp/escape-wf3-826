@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
+  room = {
+    url: 'http://les-combien.com/images/rooms/pirate.jpg',
+    title: 'Pirate',
+  }
+
   constructor() { }
 
   ngOnInit(): void {
