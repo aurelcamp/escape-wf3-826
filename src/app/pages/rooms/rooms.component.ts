@@ -20,22 +20,6 @@ class Room {
 })
 export class RoomsComponent implements OnInit {
 
-  room1: Room = {
-    id: 1,
-    title: 'Pirate',
-    description: `En tant que jeune mousse, vous devrez visiter le bateau du célèbre pirate Barbe Verte. Saurez-vous découvrir où
-      il a caché le trésor découvert sur l'île Perdue et quitter le navire ? Mais
-      dépêchez-vous les autres pirates vous suspectent
-      et ont décidé de vous enfermer.`,
-    imageUrl: 'http://les-combien.com/images/rooms/pirate.jpg',
-    imageAlt: 'Escape room pirate',
-    nbMin: 3,
-    nbMax: 4,
-    difficulty: 3,
-    isVirtual: false,
-    times: ['11h00', '14h00', '17h30', '20h00']
-  }
-
   rooms: Room[] = [
     {
 	    id: 1,
@@ -104,9 +88,12 @@ export class RoomsComponent implements OnInit {
     }
   ];
 
+  room1: Room = this.rooms[4];
+
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
