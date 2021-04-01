@@ -30,10 +30,19 @@ export class RoomComponent implements OnInit {
     difficulty: 1,
   }
 
+  descriptionIsVisible = true;
+
   constructor() { }
 
   ngOnInit(): void {
-    
+  }
+
+  toggleDescription() {
+    if (this.descriptionIsVisible) {
+      this.descriptionIsVisible = false;
+    } else {
+      this.descriptionIsVisible = true;
+    }
   }
 
 }
