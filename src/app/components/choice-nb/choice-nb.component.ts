@@ -13,7 +13,7 @@ export class ChoiceNbComponent implements OnInit {
 
   @Output() nbModify = new EventEmitter();
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
   }

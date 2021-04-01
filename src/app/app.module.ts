@@ -9,6 +9,7 @@ import { TestComponent } from './components/test/test.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { ChoiceNbComponent } from './components/choice-nb/choice-nb.component';
 import { HomeComponent } from './pages/home/home.component';
+import { RoomsComponent } from './pages/rooms/rooms.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { HomeComponent } from './pages/home/home.component';
     ReservationComponent,
     ChoiceNbComponent,
     HomeComponent,
+    RoomsComponent,
   ],
   imports: [
     BrowserModule,
