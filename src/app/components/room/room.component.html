@@ -3,7 +3,9 @@
   <div class="card-body">
     <h5 class="card-title">{{ room.title }}</h5>
     <h6>Difficulté : 
-      <span [ngClass]="{'text-success': room.difficulty === 1, 'text-warning': room.difficulty === 2, 'text-danger': room.difficulty === 3}">{{ room.difficulty }}</span>
+      <span [ngClass]="{'text-success': room.difficulty === 1, 'text-warning': room.difficulty === 2, 'text-danger': room.difficulty === 3}">
+        {{ room.difficulty }}
+      </span>
     </h6>
     <div class="players">
       <span>
