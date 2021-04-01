@@ -11,8 +11,8 @@
       </span>
     </div>
     <button class="btn btn-primary" (click)="toggleDescription()" *ngIf="room.description">
-      <span *ngIf="descriptionIsVisible == false">Voir la description</span>
-      <span *ngIf="descriptionIsVisible == true">Cacher la description</span>
+      <span *ngIf="!descriptionIsVisible">Voir la description</span>
+      <span *ngIf="descriptionIsVisible">Cacher la description</span>
     </button>
     <p class="card-text" *ngIf="descriptionIsVisible">
       {{ room.description }}
