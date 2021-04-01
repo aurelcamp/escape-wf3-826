@@ -10,7 +10,10 @@
         joueurs
       </span>
     </div>
-    <button class="btn btn-primary" (click)="toggleDescription()" *ngIf="room.description != undefined">Voir / supprimer la description</button>
+    <button class="btn btn-primary" (click)="toggleDescription()" *ngIf="room.description">
+      <span *ngIf="descriptionIsVisible == false">Voir la description</span>
+      <span *ngIf="descriptionIsVisible == true">Cacher la description</span>
+    </button>
     <p class="card-text" *ngIf="descriptionIsVisible">
       {{ room.description }}
     </p>

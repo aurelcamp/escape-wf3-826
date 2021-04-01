@@ -40,6 +40,7 @@ export class RoomComponent implements OnInit {
   toggleDescription() {
     if (this.descriptionIsVisible) {
       this.descriptionIsVisible = false;
+
     } else {
       this.descriptionIsVisible = true;
     }
