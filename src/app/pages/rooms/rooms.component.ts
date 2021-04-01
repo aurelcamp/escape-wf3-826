@@ -20,7 +20,7 @@ class Room {
 })
 export class RoomsComponent implements OnInit {
 
-  room: Room = {
+  room1: Room = {
     id: 1,
     title: 'Pirate',
     description: `En tant que jeune mousse, vous devrez visiter le bateau du célèbre pirate Barbe Verte. Saurez-vous découvrir où
