@@ -1,17 +1,17 @@
 <div class="card">
-  <img [src]="room.imageUrl" class="card-img-top" alt="...">
+  <img [src]="room.imageUrl" class="card-img-top" [alt]="room.imageAlt">
   <div class="card-body">
-    <h5 class="card-title">Pirate</h5>
-    <h6>Difficulté : 3</h6>
+    <h5 class="card-title">{{ room.title }}</h5>
+    <h6>Difficulté : {{ room.difficulty }}</h6>
     <div class="players">
       <span>
-        De 2 à 4
+        De {{ room.nbMin }} à {{ room.nbMax }}
         <br>
         joueurs
       </span>
     </div>
     <p class="card-text">
-      En tant que jeune mousse ...
+     {{ room.description }}
     </p>
     <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
   </div>
