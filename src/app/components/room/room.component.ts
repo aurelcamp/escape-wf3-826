@@ -8,6 +8,7 @@ class Room {
   nbMin: number;
   nbMax: number;
   difficulty: number;
+  isVirtual: boolean;
 }
 
 @Component({
@@ -28,6 +29,7 @@ export class RoomComponent implements OnInit {
     nbMin: 3,
     nbMax: 4,
     difficulty: 1,
+    isVirtual: false,
   }
 
   descriptionIsVisible = true;
