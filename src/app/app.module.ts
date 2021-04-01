@@ -11,6 +11,7 @@ import { ChoiceNbComponent } from './components/choice-nb/choice-nb.component';
 import { HomeComponent } from './pages/home/home.component';
 import { RoomsComponent } from './pages/rooms/rooms.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { Error404Component } from './pages/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ContactComponent } from './pages/contact/contact.component';
     HomeComponent,
     RoomsComponent,
     ContactComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
