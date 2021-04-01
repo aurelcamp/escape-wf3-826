@@ -17,6 +17,12 @@
 //   }
 // }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
 .card-body {
   position: relative;
 
