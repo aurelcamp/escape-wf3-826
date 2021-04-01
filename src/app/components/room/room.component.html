@@ -14,6 +14,15 @@
         joueurs
       </span>
     </div>
+    <div>
+      Horaires : 
+      <span *ngFor="let time of room.times">
+        {{ time }}
+      </span>
+      <!-- <ul>
+        <li *ngFor="let t of room.times">{{ t }}</li>
+      </ul> -->
+    </div>
     <button class="btn btn-primary" (click)="toggleDescription()" *ngIf="room.description">
       <span *ngIf="!descriptionIsVisible">Voir la description</span>
       <span *ngIf="descriptionIsVisible">Cacher la description</span>

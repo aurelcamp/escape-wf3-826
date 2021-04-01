@@ -9,6 +9,7 @@ class Room {
   nbMax: number;
   difficulty: number;
   isVirtual: boolean;
+  times: string[];
 }
 
 @Component({
@@ -30,6 +31,7 @@ export class RoomComponent implements OnInit {
     nbMax: 4,
     difficulty: 3,
     isVirtual: false,
+    times: ['11h00', '14h00', '17h30', '20h00']
   }
 
   descriptionIsVisible = true;
