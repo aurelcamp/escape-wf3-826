@@ -24,7 +24,7 @@ export class ApiService {
   getLoggedInUser() {
     const token = localStorage.getItem('token');
     const headers = {
-      'x-auth-token': 'ddsdqssqddsqd'
+      'x-auth-token': token
     }
 
     return this.http.get('http://api.les-combien.com/api/users/logged_in', { headers: headers }).toPromise();
