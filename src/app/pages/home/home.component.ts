@@ -23,9 +23,11 @@ export class HomeComponent implements OnInit {
     
   }
 
-  ngOnInit() {
+  async ngOnInit() {
 
-    this.rooms = this.roomService.getRooms();
+    // this.rooms = this.roomService.getRooms();
+
+    this.rooms = await this.roomService.getRoomsByHttp();
 
     setTimeout(
       () => {
