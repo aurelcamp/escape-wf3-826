@@ -10,8 +10,23 @@ export class ApiService {
     public http: HttpClient
   ) { }
 
+
+
   async login(email: string, password: string) {
-    const data = await this.http.post('http://api.les-combien.com/api/login', {username: email, password: password}).toPromise();
+    const data: any = await this.http.post('http://api.les-combien.com/api/login', {username: email, password: password}).toPromise();
     console.log(data);
+    localStorage.setItem('token', data.apiToken);
+
+    const result = await this.getLoggedInUser();
+    console.log(result);
+  }
+
+  getLoggedInUser() {
+    const token = localStorage.getItem('token');
+    const headers = {
+      'x-auth-token': 'ddsdqssqddsqd'
+    }
+
+    return this.http.get('http://api.les-combien.com/api/users/logged_in', { headers: headers }).toPromise();
   }
 }

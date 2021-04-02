@@ -22,6 +22,7 @@ export class LoginComponent implements OnInit {
     // console.log(this.email, this.password);
     this.apiService.login(this.email, this.password);
 
+    
   }
 
 }
