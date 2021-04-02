@@ -78,4 +78,8 @@ export class RoomService {
     ];
     return rooms;
   }
+
+  getRoomsByHttp() {
+    
+  }
 }
