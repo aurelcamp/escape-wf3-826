@@ -29,15 +29,24 @@ export class HomeComponent implements OnInit {
 
     this.rooms = await this.roomService.getRoomsByHttp();
 
+    // let rooms = this.rooms;
+    this.nbVirtualRooms = 0;
+    this.nbClassicRooms = 0;
+    for (let i=0; i<this.rooms.length; i++) {
+      if (this.rooms[i].isVirtual) {
+        this.nbVirtualRooms++;
+      } else {
+        this.nbClassicRooms++;
+      }
+    }
+    
+
     setTimeout(
       () => {
         this.title = 'Saurez vous sortir vivant ?'
-        this.nbClassicRooms = 20;
       },
       5000
     )
-
-    this.nbClassicRooms = 10;
 
   }
 
