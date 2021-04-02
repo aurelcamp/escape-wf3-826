@@ -1,17 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-class Room {
-  id: number;
-  title: string;
-  description?: string;
-  imageUrl: string;
-  imageAlt: string;
-  nbMin: number;
-  nbMax: number;
-  difficulty: number;
-  isVirtual: boolean;
-  times: string[];
-}
+import { Room } from 'src/app/models/room';
 
 @Component({
   selector: 'app-rooms',
