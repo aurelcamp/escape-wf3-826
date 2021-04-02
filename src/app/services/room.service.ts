@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Room } from '../models/room';
 
@@ -6,7 +7,24 @@ import { Room } from '../models/room';
 })
 export class RoomService {
 
-  constructor() { }
+  constructor(
+    public http: HttpClient
+  ) { }
+
+  getRoomsByHttp() {
+    const rooms = this.http.get('http://api.les-combien.com/api/open/rooms');
+    console.log(rooms);
+    return rooms;
+  }
+
+
+
+
+
+
+
+
+
 
   getRooms() {
     const rooms: Room[] = [
@@ -77,9 +95,5 @@ export class RoomService {
       }
     ];
     return rooms;
-  }
-
-  getRoomsByHttp() {
-    
   }
 }
