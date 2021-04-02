@@ -21,11 +21,18 @@ export class RoomComponent implements OnInit {
 
   @Input() room: Room;
 
-  descriptionIsVisible = true;
+  descriptionIsVisible = false;
 
   constructor() { }
 
   ngOnInit(): void {
+
+    let t = '0';
+    if (t) {
+      console.log('TRUE');
+    } else {
+      console.log('FALSE');
+    }
   }
 
   toggleDescription() {

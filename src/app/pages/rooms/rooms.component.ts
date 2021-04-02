@@ -90,6 +90,8 @@ export class RoomsComponent implements OnInit {
 
   room1: Room = this.rooms[4];
 
+  difficultyMin = 1;
+
   constructor() { }
 
   ngOnInit(): void {
