@@ -7,8 +7,8 @@
   </p>
 
   <div class="row">
-    <div class="col-xs-12 col-md-6" *ngFor="let r of rooms">
-      <app-room [room]="r" *ngIf="r.difficulty >= difficultyMin"></app-room>
+    <div class="col-xs-12 col-md-6" *ngFor="let r of rooms" [hidden]="!(r.difficulty >= difficultyMin)">
+      <app-room [room]="r"></app-room>
     </div>
   </div>
 
