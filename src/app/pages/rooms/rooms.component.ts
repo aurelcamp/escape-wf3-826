@@ -76,7 +76,7 @@ export class RoomsComponent implements OnInit {
     }
   ];
 
-  room1: Room = this.rooms[4];
+  // room1: Room = this.rooms[4];
 
   difficultyMin = 1;
 
