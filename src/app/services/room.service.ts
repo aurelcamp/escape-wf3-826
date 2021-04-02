@@ -11,10 +11,8 @@ export class RoomService {
     public http: HttpClient
   ) { }
 
-  getRoomsByHttp() {
-    const rooms = this.http.get('http://api.les-combien.com/api/open/rooms');
-    console.log(rooms);
-    return rooms;
+  async getRoomsByHttp() {
+    return this.http.get<Room[]>('http://api.les-combien.com/api/open/rooms').toPromise();
   }
 
 

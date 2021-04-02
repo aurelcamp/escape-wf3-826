@@ -17,8 +17,10 @@ export class RoomsComponent implements OnInit {
     public roomService: RoomService
   ) { }
 
-  ngOnInit(): void {
-    this.rooms = this.roomService.getRooms();
+  async ngOnInit() {
+    // this.rooms = this.roomService.getRooms();
+
+    this.rooms = await this.roomService.getRoomsByHttp();
   }
 
 }

@@ -16,12 +16,12 @@ export class RoomComponent implements OnInit {
 
   ngOnInit(): void {
 
-    let t = '0';
-    if (t) {
-      console.log('TRUE');
-    } else {
-      console.log('FALSE');
-    }
+    // let t = '0';
+    // if (t) {
+    //   console.log('TRUE');
+    // } else {
+    //   console.log('FALSE');
+    // }
   }
 
   toggleDescription() {
