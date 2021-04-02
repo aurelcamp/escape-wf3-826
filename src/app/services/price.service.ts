@@ -11,7 +11,6 @@ export class PriceService {
     let price = 0;
     const d = new Date();
     const n = d.getDay();
-    console.log(n);
     if (n>=1 && n<=5) {
       price = 200;
     } else {
