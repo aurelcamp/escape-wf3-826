@@ -3,7 +3,7 @@
   <form #loginForm="ngForm">
     <div class="mb-3">
       <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" name="email" class="form-control" id="exampleInputEmail1" #emailFC="ngModel" [(ngModel)]="email" required [email]="true" [minlength]="10">
+      <input type="email" name="email" class="form-control" id="exampleInputEmail1" #emailFC="ngModel" [(ngModel)]="email" required [email]="true">
       <small class="text-danger" *ngIf="emailFC.touched && emailFC.errors?.required">Email manquant</small>
       <small class="text-danger" *ngIf="emailFC.errors?.email">Format email invalide</small>
     </div>
