@@ -10,8 +10,8 @@ import { Room } from '../../models/room';
 export class HomeComponent implements OnInit {
 
   title = 'Bienvenue visiteur';
-  nbClassicRooms = 4;
-  nbVirtualRooms = 5;
+  nbClassicRooms = 0;
+  nbVirtualRooms = 0;
   ageMin = 12;
   ageMax = 120;
 
@@ -30,8 +30,6 @@ export class HomeComponent implements OnInit {
     this.rooms = await this.roomService.getRoomsByHttp();
 
     // let rooms = this.rooms;
-    this.nbVirtualRooms = 0;
-    this.nbClassicRooms = 0;
     for (let i=0; i<this.rooms.length; i++) {
       if (this.rooms[i].isVirtual) {
         this.nbVirtualRooms++;
