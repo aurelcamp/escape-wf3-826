@@ -11,6 +11,7 @@ export class ApiService {
   ) { }
 
   async login(email: string, password: string) {
-    await this.http.post('http://api.les-combien.com/api/login', {username: email, password: password}).toPromise();
+    const data = await this.http.post('http://api.les-combien.com/api/login', {username: email, password: password}).toPromise();
+    console.log(data);
   }
 }
